@@ -1,0 +1,84 @@
+<div class="container my-3">
+    <form class="form-search pt-2 bg-white">
+        <div class="topic navy line-b mt-2 mb-3">
+            <h4>รายงานสถานประกอบการที่ยังไม่ถูกรับโอน</h4>
+        </div>
+        <div class="p-2 row justify-content-between">
+            <div class="d-flex">
+                <p class="align-self-center">&nbsp;สำนักงานสรรพากรภาค 1 </p>
+            </div>
+        </div>
+        <table class="table" aria-describedby="">
+            <thead class="thead-light text-center">
+                <tr>
+                    <th scope="col" rowspan="2">ลำดับที่</th>
+                    <th scope="col" rowspan="2">หน่วยงาน</th>
+                    <th scope="colgroup" colspan="3">จำนวนสถานที่ประกอบการที่ยังไม่ถูกรับโอน</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+                <tr (click)="setPage()" id="clickNextPage">
+                    <td>1</td>
+                    <td>สำนักงานสรรพากรพื้นที่กรุงเทพมหานคร 1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>สำนักงานสรรพากรพื้นที่กรุงเทพมหานคร 2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>สำนักงานสรรพากรพื้นที่กรุงเทพมหานคร 3</td>
+                    <td>2</td>
+                </tr>
+                <tr class="bg-light">
+                    <th colspan="4" rowspan="1" scope="row" style="text-align: left">
+                        แสดงทั้งหมด <span class="bodybold">3</span> รายการ
+                    </th>
+                    <td colspan="3" style="text-align: right">
+                        <ul class="pagination pagination-sm pagination-table">
+                            <li class="page-item">
+                                <a class="page-link">
+                                    <em class="icon-previous1"></em>
+                                </a>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link"> 1 </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link"> 2 </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link"> 3 </a>
+                            </li>
+                            <div class="point">...</div>
+                            <li class="page-item">
+                                <a class="page-link"> 5 </a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link">
+                                    <em class="icon-next1"></em>
+                                </a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+    <div class="row">
+        <div class="ml-3">
+            <button type="button" class="btn btn-primary">
+                <i class="far fa-file-pdf mr-2" aria-hidden="true"></i> พิมพ์รายงาน(PDF)
+            </button>
+        </div>
+        <div class="ml-4">
+            <button type="button" class="btn btn-primary">
+                <i class="far fa-file-excel mr-2"></i> Export
+                Excel
+            </button>
+        </div>
+    </div>
+</div>
